@@ -14,16 +14,16 @@ onMounted(() => {
 });
 
 const caracters = reactive([
-  { name: "allCaracters", path: "src/assets/allCaracters.jpg" },
-  { name: "billy", path: "src/assets/billy.png" },
-  { name: "dustin", path: "src/assets/dustin.png" },
-  { name: "hopper", path: "src/assets/hopper.png" },
-  { name: "jonathan", path: "src/assets/jonathan.png" },
-  { name: "max", path: "src/assets/max.png" },
-  { name: "mike", path: "src/assets/mike.png" },
-  { name: "nancy", path: "src/assets/nancy.png" },
-  { name: "steve", path: "src/assets/steve.png" },
-  { name: "will", path: "src/assets/will.png" },
+  { name: "allCaracters", path: "./src/assets/allCaracters.jpg" },
+  { name: "billy", path: "./src/assets/billy.png" },
+  { name: "dustin", path: "./src/assets/dustin.png" },
+  { name: "hopper", path: "./src/assets/hopper.png" },
+  { name: "jonathan", path: "./src/assets/jonathan.png" },
+  { name: "max", path: "./src/assets/max.png" },
+  { name: "mike", path: "./src/assets/mike.png" },
+  { name: "nancy", path: "./src/assets/nancy.png" },
+  { name: "steve", path: "./src/assets/steve.png" },
+  { name: "will", path: "./src/assets/will.png" },
 ]);
 
 const duplicateCharacters = reactive([...caracters, ...caracters]);
