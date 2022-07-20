@@ -1,4 +1,16 @@
 <script setup>
+
+import allCaracters from '../assets/allCaracters.jpg'
+import billy from '../assets/billy.png'
+import dustin from '../assets/dustin.png'
+import hopper from '../assets/hopper.png'
+import jonathan from '../assets/jonathan.png'
+import max from '../assets/max.png'
+import mike from '../assets/mike.png'
+import nancy from '../assets/nancy.png'
+import steve from '../assets/steve.png'
+import will from '../assets/will.png'
+
 import { ref, reactive, onMounted } from "vue";
 import { usePlayerStore } from "../stores/player";
 import Card from "../components/Card.vue";
@@ -14,16 +26,16 @@ onMounted(() => {
 });
 
 const caracters = reactive([
-  { name: "allCaracters", path: "./src/assets/allCaracters.jpg" },
-  { name: "billy", path: "./src/assets/billy.png" },
-  { name: "dustin", path: "./src/assets/dustin.png" },
-  { name: "hopper", path: "./src/assets/hopper.png" },
-  { name: "jonathan", path: "./src/assets/jonathan.png" },
-  { name: "max", path: "./src/assets/max.png" },
-  { name: "mike", path: "./src/assets/mike.png" },
-  { name: "nancy", path: "./src/assets/nancy.png" },
-  { name: "steve", path: "./src/assets/steve.png" },
-  { name: "will", path: "./src/assets/will.png" },
+  { name: "allCaracters", path: allCaracters },
+  { name: "billy", path: billy },
+  { name: "dustin", path: dustin },
+  { name: "hopper", path: hopper },
+  { name: "jonathan", path: jonathan },
+  { name: "max", path: max },
+  { name: "mike", path: mike },
+  { name: "nancy", path: nancy },
+  { name: "steve", path: steve },
+  { name: "will", path: will },
 ]);
 
 const duplicateCharacters = reactive([...caracters, ...caracters]);
