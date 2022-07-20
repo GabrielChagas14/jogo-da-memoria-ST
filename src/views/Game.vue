@@ -63,9 +63,9 @@ const shuffledArray = reactive(
 </template>
 <style lang="postcss">
 main {
-  @apply w-full h-full pt-5 px-5 pb-12 bg-main bg-cover font-pressStart;
+  @apply w-full h-full pt-5 px-5 pb-12 bg-main bg-cover bg-center font-pressStart;
   & header {
-    @apply mx-auto mb-9 p-7 rounded-md select-none flex items-center justify-between w-full max-w-4xl bg-transparent-white text-xl;
+    @apply mx-auto mb-9 p-7 rounded-md select-none flex items-center justify-between w-full max-w-4xl bg-transparent-white text-sm md:text-xl;
   }
   & .grid-cards {
     @apply grid grid-cols-5 gap-4 w-full max-w-4xl relative m-auto;

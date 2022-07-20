@@ -48,7 +48,7 @@ function compareCard() {
 
 function checkEndGame(){
   if(cards.getDisabledCard === 20){
-    clearInterval(this.loop)
+    //clearInterval(this.loop)
     alert('Parabéns, você conseguiu')
   }
 }
@@ -61,13 +61,12 @@ function checkEndGame(){
 </template>
 <style lang="postcss">
 .card {
-  @apply w-full select-none aspect-3/4 rounded-md relative transition-all duration-500 absolute;
+  @apply w-full select-none aspect-3/4 rounded-md transition-all duration-500;
   background-color: #ccc;
   transform-style: preserve-3d;
   perspective: -10px;
   & .face {
     @apply w-full h-full absolute rounded-md bg-cover bg-center border-2 border-st-red transition-all duration-300;
-    /* transform: rotateY(180deg); */
   }
   & .back {
     @apply bg-cover-1;

@@ -48,11 +48,11 @@ function handleSubmit() {
 			@apply w-24;
 		}
 		& .title {
-			@apply text-3xl text-primary;
+			@apply text-xl md:text-3xl text-primary;
 		}
 	}
 	& .login-form {
-		@apply flex flex-col;
+		@apply flex flex-col px-4;
 		& .login-input {
 			@apply w-full mb-4 p-4 max-w-xs border-2 border-primary rounded-lg text-base outline-none;
 		}

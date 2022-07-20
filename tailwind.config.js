@@ -21,7 +21,7 @@ module.exports = {
         '3/4': '3/4',
       },
       backgroundImage: {
-        'cover-1': "url('/src/assets/cover-2.jpg')",
+        'cover-1': "url('/src/assets/cover-3.jpg')",
         'main': "url('/src/assets/bg.jpeg')",
       }
     },
