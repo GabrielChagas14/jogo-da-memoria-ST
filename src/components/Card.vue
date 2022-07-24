@@ -4,7 +4,6 @@ import { useCardsStore } from "../stores/cards";
 const cards = useCardsStore();
 const props = defineProps(["img", "name"]);
 const front = ref(null);
-
 onMounted(() => {
   front.value.style.backgroundImage = "url(" + props.img + ")";
 });
@@ -34,8 +33,8 @@ function compareCard() {
     cards.getSecondCard.firstChild.classList.add("disabled-card");
     cards.setFirstCard("");
     cards.setSecondCard("");
-    cards.increaseDisabledCards()
-    checkEndGame()
+    cards.increaseDisabledCards();
+    checkEndGame();
   } else {
     setTimeout(() => {
       cards.firstCard.classList.remove("reveal-card");
@@ -48,7 +47,6 @@ function compareCard() {
 
 function checkEndGame(){
   if(cards.getDisabledCard === 20){
-    //clearInterval(this.loop)
     alert('Parabéns, você conseguiu')
   }
 }

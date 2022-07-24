@@ -18,8 +18,9 @@ import Card from "../components/Card.vue";
 const player = usePlayerStore();
 const timer = ref(null);
 
+
 onMounted(() => {
- this.loop = setInterval(() => {
+setInterval(() => {
     const currentTime = +timer.value.innerHTML;
     timer.value.innerHTML = currentTime + 1;
   }, 1000);

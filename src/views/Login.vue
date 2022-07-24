@@ -15,7 +15,7 @@ watch(name, name => {
 });
 function handleSubmit() {
 	player.setName(name)
-	router.push('/game')
+	router.push('/Game')
 }
 
 </script>
